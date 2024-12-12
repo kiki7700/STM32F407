@@ -7,6 +7,7 @@
 "..\..\output\sys.o"
 "..\..\output\usart.o"
 "..\..\output\led.o"
+"..\..\output\key.o"
 "..\..\output\stm32f4xx_hal.o"
 "..\..\output\stm32f4xx_hal_cortex.o"
 "..\..\output\stm32f4xx_hal_gpio.o"

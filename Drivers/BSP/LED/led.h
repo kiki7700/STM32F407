@@ -20,6 +20,8 @@
 #define LED1_GPIO_PIN              GPIO_PIN_10
 #define LED_GPIO_CLK_ENABLE()      do{ __HAL_RCC_GPIOF_CLK_ENABLE(); }while(0)
 
+/******************************************************************************************/
+/* º¯ÊýÉùÃ÷ */
 void led_init(void);
 
 #endif
