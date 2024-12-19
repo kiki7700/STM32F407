@@ -67,4 +67,5 @@
 ..\..\output\key.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h
 ..\..\output\key.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h
 ..\..\output\key.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h
+..\..\output\key.o: ..\..\Drivers\CMSIS\Include\core_cm4.h
 ..\..\output\key.o: ..\..\Drivers\./SYSTEM/delay/delay.h

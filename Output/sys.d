@@ -66,3 +66,4 @@
 ..\..\output\sys.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h
 ..\..\output\sys.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h
 ..\..\output\sys.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h
+..\..\output\sys.o: ..\..\Drivers\CMSIS\Include\core_cm4.h

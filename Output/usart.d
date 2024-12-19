@@ -66,5 +66,6 @@
 ..\..\output\usart.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h
 ..\..\output\usart.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h
 ..\..\output\usart.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h
+..\..\output\usart.o: ..\..\Drivers\CMSIS\Include\core_cm4.h
 ..\..\output\usart.o: ..\..\Drivers\./SYSTEM/usart/usart.h
 ..\..\output\usart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
