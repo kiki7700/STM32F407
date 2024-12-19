@@ -73,3 +73,4 @@
 ..\..\output\main.o: ..\..\Drivers\./BSP/LED/led.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/KEY/key.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/EXTI/exti.h
+..\..\output\main.o: ..\..\Drivers\./BSP/WDG/wdg.h
