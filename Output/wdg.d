@@ -68,3 +68,4 @@
 ..\..\output\wdg.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h
 ..\..\output\wdg.o: ..\..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h
 ..\..\output\wdg.o: ..\..\Drivers\CMSIS\Include\core_cm4.h
+..\..\output\wdg.o: ..\..\Drivers\./BSP/LED/led.h

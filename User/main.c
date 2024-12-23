@@ -24,17 +24,22 @@ int main()
     key_init();
     delay_init(168);
     exti_init();
-    delay_ms(100);
-    printf("您还没喂狗，请及时喂狗！！\r\n");
-    iwdg_init(IWDG_PRESCALER_16, 2000);          /* 重装载值为2000，溢出时间为1s，溢出即重启 */
-    HAL_GPIO_WritePin(LED_GPIO_PORT, LED0_GPIO_PIN, GPIO_PIN_RESET);
+    wwdg_init(0x7f, 0x5f, WWDG_PRESCALER_8);
+    
+    if (__HAL_RCC_GET_FLAG(RCC_FLAG_WWDGRST) != RESET)
+    {
+        printf("窗口看门狗复位\r\n");
+        __HAL_RCC_CLEAR_RESET_FLAGS();
+    }
+    else
+    {
+        printf("外部复位\r\n");
+    }
+    
+    printf("请在窗口期内喂狗\r\n\r\n");
     
     while(1)
     {
-        if (key_scan(0) == WKUP_PRES)
-        {
-            iwdg_feed();
-            printf("已经喂狗\r\n");
-        }
+        delay_ms(45);
     }
 }

@@ -125,14 +125,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
             break;
         default : break;
     }
-    
-//    if (GPIO_Pin == KEY0_GPIO_PIN)
-//    {
-//        if(HAL_GPIO_ReadPin(KEY_GPIO_PORT, KEY0_GPIO_PIN) == 0)
-//        {
-//            HAL_GPIO_TogglePin(LED_GPIO_PORT, LED0_GPIO_PIN);
-//        }
-//    }
 }
 
 
