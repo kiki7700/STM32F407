@@ -14,6 +14,7 @@
 #include "./BSP/KEY/key.h"
 #include "./BSP/EXTI/exti.h"
 #include "./BSP/WDG/wdg.h"
+#include "./BSP/TIMER/btim.h"
 
 int main()
 {
@@ -24,22 +25,9 @@ int main()
     key_init();
     delay_init(168);
     exti_init();
-    wwdg_init(0x7f, 0x5f, WWDG_PRESCALER_8);
-    
-    if (__HAL_RCC_GET_FLAG(RCC_FLAG_WWDGRST) != RESET)
-    {
-        printf("窗口看门狗复位\r\n");
-        __HAL_RCC_CLEAR_RESET_FLAGS();
-    }
-    else
-    {
-        printf("外部复位\r\n");
-    }
-    
-    printf("请在窗口期内喂狗\r\n\r\n");
+    btim_timx_init(5000 - 1, 8400 - 1);          /* 定时500ms */
     
     while(1)
     {
-        delay_ms(45);
     }
 }
